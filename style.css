@@ -12,7 +12,7 @@ body {
     justify-content: space-around;
 }
 .header_right p{
-    font-weight: bold;
+    font-weight: 700;
     font-size: 25px;
 }
 .header_left_content{
@@ -51,21 +51,16 @@ body {
 .top_img img{
     width: 100%;
 }
-@media(max-width: 600px){
-    .top_img img{
-        width: 100%;
-    }
-}
 
 /* about */
 .About{
     max-width: 960px;
     margin: auto;
-    padding: 4%;
+    padding: 26px;
 }
 
 .about_top{
-    font-weight: bold;
+    font-weight: 700;
     text-align: center;
     font-size: 25px;
 }
@@ -86,11 +81,11 @@ body {
 .Works{
     max-width: 960px;
     margin: auto;
-    padding: 4%;
+    padding: 26px;
 }
 .work_top{
     text-align: center;
-    font-weight: bold;
+    font-weight: 700;
     margin-top: 100px;
     font-size: 25px;
 }
@@ -98,8 +93,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 30px 30px;
-    margin: auto;
-    margin-top: 50px;
+    margin: 50px auto 0;
 }
 .work_img img{
     width: 285px;
@@ -117,14 +111,13 @@ body {
 .News{
     max-width: 960px;
     margin: auto;
-    padding: 4%;
+    padding: 26px;
 }
 .news_top{
     text-align: center;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 25px;
-    margin-top: 100px;
-    margin-bottom: 50px;
+    margin: 80px 0 50px 0;
 }
 .news_tet{
     display: flex;
@@ -135,8 +128,7 @@ body {
     border-top: 1px solid #333;
 }
 .news_tet_date{
-    margin-right: 100px;
-    margin-left: 30px;
+    margin: 16px 60px 16px 14px;
 }
 @media(max-width: 600px){
     .news_tet{
@@ -145,37 +137,31 @@ body {
         flex-direction: column;
     }
     .news_tet_date{
-        margin-right: 100px;
-        margin-left: 30px;
-        margin-bottom: 0px;
+        margin: 15px 100px 0 30px;
     }
     .news_tet_p{
-        margin-top: 0px;
-        margin-left: 30px;
+        margin: 0 0 15px 30px;    
     }
-    
 }
 
 /* contact */
 .Contact{
     max-width: 960px;
-    margin: auto;
-    margin-bottom: 40px ;
-    padding: 4%;
+    margin: 0 auto 20px;
+    padding: 26px;
 }
 .contact_top{
     text-align: center;
     font-size: 25px;
-    font-weight: bold;
+    font-weight: 700;
     margin-top: 100px;
 }
 
 
 .submit{
     text-align: center;
-    margin-top: 40px;
-    margin-bottom: 80px;
-}
+    margin: 40px 0 80px 0;
+} 
 .name,
 .mail,
 .message{
@@ -198,7 +184,6 @@ body {
 .messagebox > textarea{
     width: 100%;
     height: 80%;
-
 }
 .cp{
     width: 20%;
@@ -206,7 +191,7 @@ body {
 }
 .button{
     display: inline-block;
-    border-radius: 20%;
+    border-radius: 10px;
     font-size: 18px;
     text-align: center;
     cursor: pointer;
