@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+        <title>My Work</title>
+    </head>
+    <body>
+        <header>
+            <div class="header">
+                <div class="top_header">
+                    <div class="header_right">
+                        <p>My Work</p>
+                    </div>
+                    <div class="header_left">
+                        <div class="header_left_content">
+                            <div class="header_left_content_txt">
+                                <p>About</p>
+                            </div>
+                            <div class="header_left_content_txt">
+                                <p>Works</p>
+                            </div>
+                            <div class="header_left_content_txt">
+                                <p>News</p>
+                            </div>
+                            <div class="header_left_content_txt">
+                                <p>Contact</p>
+                            </div>
+                            <div class="header_left_content_txt">
+                                <img src="./img/icon-instagram.png" alt="instagram"  loading="eager">
+                            </div>
+                        </div>
+                    </div>
+                </div>            
+            </div>
+        </header>
+<!-- eagerは早めに読み込む目印（ファーストビューとかロゴ）leyzはスクロールしてたら読み込む感じのもの パフォーマンス上がる-->
+        <div class="top_img">
+            <picture>
+                <source srcset="./img/mainvisual-sp.jpg" media="(max-width: 600px)"/>
+                <img src="./img/mainvisual-pc.jpg" alt="" loading="eager"/>
+            </picture>
+        </div>
+        <div class="About">
+            <div class="about_top"> 
+                <p>About</p>
+            </div>
+            <div class="about_name">
+                <p>Xxxxx Ashley</p>
+            </div>
+            <div class="about_adless">
+                <p>2th Floor xxxxx Building x-x-x Nishiazabu,minato-ku,Tokyo 106-0031 Japan <br>tel:000-0000-0000 <br>url:www.xxxxxx.jp <br>mail:xxx@xxxxxx.jp</p>
+            </div>
+            <div class="about_tet">
+                <p>プロフィールテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+            </div>
+        </div>
+        <div class="Works">
+            <div class="work_top">
+                <p>WORK</p>
+            </div>
+            <div class="work_img">
+                <img src="./img/works1.jpg" alt="1" loading="lazy">
+                <img src="./img/works2.jpg" alt="2" loading="lazy">
+                <img src="./img/works3.jpg" alt="3" loading="lazy">
+                <img src="./img/works4.jpg" alt="4" loading="lazy">
+                <img src="./img/works5.jpg" alt="5" loading="lazy">
+                <img src="./img/works6.jpg" alt="6" loading="lazy">
+            </div>
+        </div>
+        <div class="News">
+            <div class="news_top">
+                <p>News</p>
+            </div>
+            <div class="news_contact">
+                <div class="news_tet">
+                    <p class="news_tet_date">2020.xx.xx </p>
+                    <p class="news_tet_p">デザイン雑誌「xxxxxx vol.11」に掲載していただきました。</p>
+                </div>
+                <div class="news_tet">
+                    <p class="news_tet_date">2020.xx.xx </p>
+                    <p class="news_tet_p">xx月xx日から写真集「xxxxxx」の販売を開始します。</p>
+                </div>
+                <div class="news_tet">
+                    <p class="news_tet_date">2019.xx.xx </p>
+                    <p class="news_tet_p">【イベント開催のお知らせ】テキストテキストテキストテキストテキストテキスト</p>
+                </div>
+                <div class="news_tet">
+                    <p class="news_tet_date">2019.xx.xx </p>
+                    <p class="news_tet_p">デザイン雑誌「xxxxxx vol.10」に掲載していただきました。</p>
+                </div>
+                <div class="news_tet">
+                    <p class="news_tet_date">2019.xx.xx </p>
+                    <p class="news_tet_p">【個展開催のお知らせ】テキストテキストテキストテキストテキストテキストテキスト</p>
+                </div>
+            </div>
+        </div>
+        <div class="Contact">
+            <div class="contact_top">
+                <p>Contact</p>
+            </div>
+            <div class="name">
+                <p class="cp"> NAME </p>
+                <div class="namebox">
+                    <input type="text" >
+                </div>          
+            </div>
+            <div class="mail">
+                <P class="cp">E-mail</P>
+                <div class="mailbox">
+                    <input type="text">
+                </div>
+            </div>
+            <div class="message">
+                <p class="cp">MESSAGE</p>
+                <div class="messagebox">
+                    <textarea name="message"></textarea>
+                </div>
+            </div>
+            <div class="submit">
+                    <input type="submit" value="送信する" class="button" >
+            </div>
+        </div>
+        <footer>
+            <div class="bottom">
+                <small>🄫2023 Mywork</small>
+            </div>
+        </footer>
+    </body>
+</html>

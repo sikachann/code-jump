@@ -1,0 +1,232 @@
+body {
+    margin: 0px;
+} 
+
+/* header */
+.header{
+    max-width: 960px;
+    margin: auto;
+}
+.top_header{
+    display: flex;
+    justify-content: space-around;
+}
+.header_right p{
+    font-weight: 700;
+    font-size: 25px;
+}
+.header_left_content{
+    display: flex;
+    justify-content: center;
+}
+.header_left_content_txt{
+    margin: 10px;
+}
+.header_left_content_txt img{
+    width: 30px;
+    margin-top: 10px;
+}
+@media(max-width: 600px){
+    .header{
+        max-width: 600px;
+        margin: auto;
+    }
+    .top_header{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+    .header_right p{
+        text-align: center;
+        margin: 0;
+    }
+    .header_left_content_txt p{
+        text-align: center;
+        margin: 0;
+    }
+    .header_left_content_txt img{
+        margin-top: 0;
+}
+}
+/* fv */
+.top_img{
+    margin-top: 80px;
+}
+.top_img img{
+    width: 100%;
+}
+@media (max-width: 600px) {
+    .top_img{
+        margin-top: 0px;
+    }
+    
+}
+
+/* about */
+.About{
+    max-width: 960px;
+    margin: auto;
+    padding: 26px;
+}
+
+.about_top{
+    font-weight: 700;
+    text-align: center;
+    font-size: 25px;
+}
+.about_name{
+    font-size: 15px;
+}
+.about_adless{
+    font-size: 15px;
+    margin-top: 40px;
+}
+.about_tet{
+    font-size: 15px;
+    margin-top: 40px;
+}
+/* works */
+.Works{
+    max-width: 960px;
+    margin: auto;
+    padding: 26px;
+}
+.work_top{
+    text-align: center;
+    font-weight: 700;
+    margin-top: 100px;
+    font-size: 25px;
+}
+.work_img{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px 30px;
+    margin: 50px auto 0;
+}
+.work_img img{
+    width: 285px;
+}
+@media(max-width: 600px){
+    .work_img{
+        justify-content: center;
+    }
+    .work_img img{
+        width: 100%;
+    }
+}
+/* news */
+.News{
+    max-width: 960px;
+    margin: auto;
+    padding: 26px;
+}
+.news_top{
+    text-align: center;
+    font-weight: 700;
+    font-size: 25px;
+    margin: 80px 0 50px 0;
+}
+.news_tet{
+    display: flex;
+    border-bottom: 1px solid #333;
+}
+/* 疑似クラス一つ目の要素だけcss当てたいときに使う */
+.news_tet:first-child{
+    border-top: 1px solid #333;
+}
+.news_tet_date{
+    margin: 16px 60px 16px 14px;
+}
+@media(max-width: 600px){
+    .news_tet{
+        display: flex;
+        border-bottom: 1px solid #333;
+        flex-direction: column;
+    }
+    .news_tet_date{
+        margin: 15px 100px 0 5px;
+    }
+    .news_tet_p{
+        margin: 0 0 15px 5px;    
+    }
+}
+
+/* contact */
+.Contact{
+    max-width: 960px;
+    margin: 0 auto 20px;
+    padding: 26px;
+}
+.contact_top{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+}
+.submit{
+    text-align: center;
+    margin: 40px 0 80px 0;
+} 
+.name,
+.mail,
+.message{
+    display: flex;
+    margin-bottom: 20px;
+}
+.namebox,
+.mailbox,
+.messagebox{
+    width: 80%;
+}
+.namebox > input,
+.mailbox > input{
+    width: 100%;
+    padding: 10px 0;
+}
+.messagebox{
+    height: 200px;
+}
+.messagebox > textarea{
+    width: 100%;
+    height: 80%;
+}
+.cp{
+    width: 20%;
+    margin: 0px;
+}
+.button{
+    display: inline-block;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+    padding: 12px 12px;
+    background-color: #080808;
+    color: #ffffff;
+    line-height: 1em;
+    transition: .3s;
+    border: 2px solid #010101;
+}
+.button:hover{
+    box-shadow: none;
+    color: #030303;
+    background-color: #ffffff;
+}
+
+@media (max-width:600px) {
+    .name,
+    .mail,
+    .message{
+    display: flex;
+    margin-bottom: 20px;
+    flex-direction: column;
+    }
+    .namebox,
+    .mailbox,
+    .messagebox{
+        width: 100%;
+    }
+}
+.bottom{
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+}
