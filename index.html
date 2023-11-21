@@ -29,17 +29,18 @@
                                 <p>Contact</p>
                             </div>
                             <div class="header_left_content_txt">
-                                <img src="./img/icon-instagram.png" alt="instagram">
+                                <img src="./img/icon-instagram.png" alt="instagram"  loading="eager">
                             </div>
                         </div>
                     </div>
                 </div>            
             </div>
         </header>
+<!-- eagerは早めに読み込む目印（ファーストビューとかロゴ）leyzはスクロールしてたら読み込む感じのもの パフォーマンス上がる-->
         <div class="top_img">
             <picture>
                 <source srcset="./img/mainvisual-sp.jpg" media="(max-width: 600px)"/>
-                <img src="./img/mainvisual-pc.jpg" alt=""/>
+                <img src="./img/mainvisual-pc.jpg" alt="" loading="eager"/>
             </picture>
         </div>
         <div class="About">
@@ -50,10 +51,7 @@
                 <p>Xxxxx Ashley</p>
             </div>
             <div class="about_adless">
-                <p>2th Floor xxxxx Building x-x-x Nishiazabu,minato-ku,Tokyo 106-0031 Japan</p>
-                <p>tel:000-0000-0000</p>
-                <p>url:www.xxxxxx.jp</p>
-                <p>mail:xxx@xxxxxx.jp</p>
+                <p>2th Floor xxxxx Building x-x-x Nishiazabu,minato-ku,Tokyo 106-0031 Japan <br>tel:000-0000-0000 <br>url:www.xxxxxx.jp <br>mail:xxx@xxxxxx.jp</p>
             </div>
             <div class="about_tet">
                 <p>プロフィールテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
@@ -64,12 +62,12 @@
                 <p>WORK</p>
             </div>
             <div class="work_img">
-                <img src="./img/works1.jpg" alt="1">
-                <img src="./img/works2.jpg" alt="2">
-                <img src="./img/works3.jpg" alt="3">
-                <img src="./img/works4.jpg" alt="4">
-                <img src="./img/works5.jpg" alt="5">
-                <img src="./img/works6.jpg" alt="6">
+                <img src="./img/works1.jpg" alt="1" loading="lazy">
+                <img src="./img/works2.jpg" alt="2" loading="lazy">
+                <img src="./img/works3.jpg" alt="3" loading="lazy">
+                <img src="./img/works4.jpg" alt="4" loading="lazy">
+                <img src="./img/works5.jpg" alt="5" loading="lazy">
+                <img src="./img/works6.jpg" alt="6" loading="lazy">
             </div>
         </div>
         <div class="News">
@@ -106,19 +104,19 @@
             <div class="name">
                 <p class="cp"> NAME </p>
                 <div class="namebox">
-                    <input type="text" placeholder="name">
+                    <input type="text" >
                 </div>          
             </div>
             <div class="mail">
                 <P class="cp">E-mail</P>
                 <div class="mailbox">
-                    <input type="text" placeholder="E-mail">
+                    <input type="text">
                 </div>
             </div>
             <div class="message">
                 <p class="cp">MESSAGE</p>
                 <div class="messagebox">
-                    <textarea name="message" placeholder="message"></textarea>
+                    <textarea name="message"></textarea>
                 </div>
             </div>
             <div class="submit">

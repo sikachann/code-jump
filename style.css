@@ -20,7 +20,7 @@ body {
     justify-content: center;
 }
 .header_left_content_txt{
-    margin: 20px;
+    margin: 10px;
 }
 .header_left_content_txt img{
     width: 30px;
@@ -38,18 +38,28 @@ body {
     }
     .header_right p{
         text-align: center;
+        margin: 0;
     }
     .header_left_content_txt p{
         text-align: center;
+        margin: 0;
     }
+    .header_left_content_txt img{
+        margin-top: 0;
 }
-
+}
 /* fv */
 .top_img{
     margin-top: 80px;
 }
 .top_img img{
     width: 100%;
+}
+@media (max-width: 600px) {
+    .top_img{
+        margin-top: 0px;
+    }
+    
 }
 
 /* about */
@@ -75,8 +85,6 @@ body {
     font-size: 15px;
     margin-top: 40px;
 }
-
-
 /* works */
 .Works{
     max-width: 960px;
@@ -103,10 +111,9 @@ body {
         justify-content: center;
     }
     .work_img img{
-        width: 552px;
+        width: 100%;
     }
 }
-
 /* news */
 .News{
     max-width: 960px;
@@ -137,10 +144,10 @@ body {
         flex-direction: column;
     }
     .news_tet_date{
-        margin: 15px 100px 0 30px;
+        margin: 15px 100px 0 5px;
     }
     .news_tet_p{
-        margin: 0 0 15px 30px;    
+        margin: 0 0 15px 5px;    
     }
 }
 
@@ -154,10 +161,7 @@ body {
     text-align: center;
     font-size: 25px;
     font-weight: 700;
-    margin-top: 100px;
 }
-
-
 .submit{
     text-align: center;
     margin: 40px 0 80px 0;
@@ -191,22 +195,35 @@ body {
 }
 .button{
     display: inline-block;
-    border-radius: 10px;
     font-size: 18px;
     text-align: center;
     cursor: pointer;
     padding: 12px 12px;
-    background-color: #00007f;
+    background-color: #080808;
     color: #ffffff;
     line-height: 1em;
     transition: .3s;
-    box-shadow: 2px 2px 9px #666666;
-    border: 2px solid #00007f;
+    border: 2px solid #010101;
 }
 .button:hover{
     box-shadow: none;
-    color: #00007f;
+    color: #030303;
     background-color: #ffffff;
+}
+
+@media (max-width:600px) {
+    .name,
+    .mail,
+    .message{
+    display: flex;
+    margin-bottom: 20px;
+    flex-direction: column;
+    }
+    .namebox,
+    .mailbox,
+    .messagebox{
+        width: 100%;
+    }
 }
 .bottom{
     background-color: #000000;
